@@ -1,36 +1,46 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ⚡ Kanban Flow — Modern Workspace & Task Management SaaS
 
-## Getting Started
+A modern, high-performance **Kanban Workspace & Task Management SaaS Platform** built with **Next.js 15**, **TypeScript**, **Tailwind CSS**, **Prisma ORM**, and **NextAuth.js**. Designed with an ultra-modern dark-mode glassmorphism interface, real-time board interactivity, custom workspace security PINs, sub-task progress tracking, and full workspace management.
 
-First, run the development server:
+![Next JS](https://img.shields.io/badge/Next.js_15-black?style=for-the-badge&logo=next.js&logoColor=white) ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white) ![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white) ![Prisma](https://img.shields.io/badge/Prisma-2D3748?style=for-the-badge&logo=prisma&logoColor=white) ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## ✨ Key Features
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Multi-Tenant Workspaces** — Create, manage, and switch between multiple personal or team workspaces (e.g., *QuantumPulse Labs*, *Apex Security & Cloud Operations*, *Weekend & Lifestyle Hub*).
+- **Interactive Kanban Boards** — Organize tasks across customizable columns (*To Do*, *In Progress*, *Review & Testing*, *Done*).
+- **Task Micro-Management** — Detailed task modal with sub-task progress tracking (checklists), comment discussions, priority badges (*Urgent*, *High*, *Medium*, *Low*), and activity logs.
+- **Secure Workspace Invite & PIN System** — Join workspaces via unique invite links protected by a 4-digit security PIN.
+- **Glassmorphism Dark UI** — Futuristic dark-mode interface featuring dynamic ambient light glows, smooth transitions, and responsive layouts.
+- **Custom Modern Confirmation Modals** — Replaced native browser alerts with custom interactive modal dialogs for critical actions like workspace deletion.
+- **Cascade Deletion API** — Delete workspaces safely with Prisma relational cascade deletion (automatically cleans up child boards, tasks, comments, and member roles).
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 🛠️ Tech Stack
 
-To learn more about Next.js, take a look at the following resources:
+- **Framework:** Next.js 15 (App Router with Server Actions & Turbopack)
+- **Language:** TypeScript
+- **Database & ORM:** PostgreSQL / SQLite with Prisma ORM
+- **Authentication:** NextAuth.js
+- **Styling & UI:** Tailwind CSS, Lucide Icons, Shadcn UI
+- **Deployment:** Vercel
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🚀 Getting Started
 
-## Deploy on Vercel
+### Prerequisites
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Ensure you have the following installed on your machine:
+- [Node.js](https://nodejs.org/) 18.x or higher
+- [npm](https://www.npmjs.com/) / [pnpm](https://pnpm.io/) / [yarn](https://yarnpkg.com/)
+- PostgreSQL database instance (or SQLite for local development)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Installation & Local Setup
+
+1. **Clone the repository:**
+   ```bash
+   git clone [https://github.com/your-username/kanban-flow.git](https://github.com/your-username/kanban-flow.git)
+   cd kanban-flow
