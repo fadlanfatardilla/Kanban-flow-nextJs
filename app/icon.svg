@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#020617" />
+    </linearGradient>
+
+    <!-- Column & Accent Gradient -->
+    <linearGradient id="kanbanGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f97316" />
+      <stop offset="50%" stop-color="#f43f5e" />
+      <stop offset="100%" stop-color="#6366f1" />
+    </linearGradient>
+
+    <!-- Subtle Glow Shadow -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="12" flood-color="#f97316" flood-opacity="0.35" />
+    </filter>
+  </defs>
+
+  <!-- Base Rounded Container -->
+  <rect width="512" height="512" rx="128" fill="url(#bgGlow)" />
+  <rect width="504" height="504" x="4" y="4" rx="124" fill="none" stroke="url(#kanbanGrad)" stroke-width="8" stroke-opacity="0.4" />
+
+  <!-- Kanban Columns Icon Group -->
+  <g filter="url(#glow)" transform="translate(96, 96)">
+    <!-- Column 1 (Short - To Do) -->
+    <rect x="0" y="0" width="80" height="320" rx="20" fill="url(#kanbanGrad)" opacity="0.9" />
+    <rect x="16" y="24" width="48" height="64" rx="10" fill="#ffffff" opacity="0.9" />
+    <rect x="16" y="104" width="48" height="96" rx="10" fill="#ffffff" opacity="0.4" />
+
+    <!-- Column 2 (Tall - In Progress) -->
+    <rect x="120" y="0" width="80" height="320" rx="20" fill="url(#kanbanGrad)" opacity="0.9" />
+    <rect x="136" y="24" width="48" height="112" rx="10" fill="#ffffff" opacity="0.9" />
+    <rect x="136" y="152" width="48" height="80" rx="10" fill="#ffffff" opacity="0.9" />
+
+    <!-- Column 3 (Medium - Done) -->
+    <rect x="240" y="0" width="80" height="320" rx="20" fill="url(#kanbanGrad)" opacity="0.9" />
+    <rect x="256" y="24" width="48" height="80" rx="10" fill="#ffffff" opacity="0.9" />
+    <rect x="256" y="120" width="48" height="136" rx="10" fill="#ffffff" opacity="0.4" />
+  </g>
+</svg>
