@@ -142,7 +142,7 @@ export default function LandingPage() {
                   <div className="flex h-3 w-3 rounded-full bg-green-500/80" />
                 </div>
                 <span className="text-xs text-slate-500 font-mono">
-                  kanbanflow-app.vercel.app
+                  kanbanflow-workspace.vercel.app
                 </span>
               </div>
 
