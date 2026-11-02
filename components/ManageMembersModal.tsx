@@ -80,8 +80,8 @@ export function ManageMembersModal({
   const handleSaveAllChanges = async () => {
     setIsSubmitting(true);
     try {
-      // Filter hanya member yang rolenya berubah dari awal
-      const changes = workspace.members
+      
+      const changes: { memberId: string; role: string }[] = workspace.members
         .filter(
           (m: any) => selectedRoles[m.id] && selectedRoles[m.id] !== m.role,
         )
@@ -107,13 +107,10 @@ export function ManageMembersModal({
         ),
       );
 
-      // Munculkan alert / toast sukses
       showToast("Berhasil memperbarui peran anggota!", "success");
 
-      // Tutup modal secara otomatis
       setIsManageOpen(false);
 
-      // Refresh halaman untuk memperbarui data terbaru
       window.location.reload();
     } catch (error) {
       console.error("Error updating roles:", error);
